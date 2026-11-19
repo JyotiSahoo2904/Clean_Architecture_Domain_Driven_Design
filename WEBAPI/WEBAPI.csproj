@@ -4,7 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Clean_Architecture_DDD_</RootNamespace>
+	<RootNamespace>Clean_Architecture_Domain_Driven_Design</RootNamespace>
+
   </PropertyGroup>
 
   <ItemGroup>
