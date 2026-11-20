@@ -1,17 +1,18 @@
-﻿using Application.Interfaces;
-using Application.Services;
+﻿using Application.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Clean_Architecture_Domain_Driven_Design.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]    
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
 
         public ProductsController(IProductService productService) => _productService = productService;
 
-        [HttpGet]
+        [HttpGet("all")]
         public async  Task<List<Product>> Get()
         {
             var products = await _productService.GetAllProducts();

@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Clean_Architecture_DDD_.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]   
     public class MemberController : Controller
     {
         private readonly IMemberService memberService;
